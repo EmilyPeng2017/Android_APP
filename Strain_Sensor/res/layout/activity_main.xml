@@ -1,0 +1,252 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.ps.strain_sensor.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#81bd3d"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="pEFi Strain Sensor"
+            android:textColor="@android:color/white"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextView_num"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="46dp"
+            android:text="TextView" />
+
+        <Spinner
+            android:id="@+id/Spinner_num"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView_num"
+            android:layout_marginLeft="27dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/search_bt"
+            android:layout_alignParentRight="true"
+            android:text="未连接" />
+
+        <Button
+            android:id="@+id/search_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/Spinner_num"
+            android:layout_marginRight="13dp"
+            android:text="搜索设备" />
+
+        <LinearLayout
+            android:id="@+id/chart"
+            android:layout_width="400dp"
+            android:layout_height="280dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/search_bt"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ssensor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sensor1"
+            android:layout_marginTop="430dp"
+            android:layout_marginLeft="123dp"
+            android:text="sensor2"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+       <TextView
+            android:id="@+id/sensort1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chart"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="220dp"
+            android:text="0" />
+        <TextView
+            android:id="@+id/sensort2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sensort1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="220dp"
+            android:text="0" />
+        <TextView
+            android:id="@+id/sensort3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sensort2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="220dp"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/sensort4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sensort3"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="3dp"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/sensort5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sensort4"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="220dp"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/cm1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chart"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="250dp"
+            android:text="      KΩ" />
+
+		<TextView
+		    android:id="@+id/cm2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/cm1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="250dp"
+		    android:text="      pF" />
+
+        <TextView
+            android:id="@+id/cm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cm2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="250dp"
+            android:text="      pF" />
+
+        <TextView
+            android:id="@+id/cm4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ssensor4"
+            android:layout_below="@+id/cm3"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="3dp"
+            android:text="      KΩ" />
+        <TextView
+            android:id="@+id/cm5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cm4"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="3dp"
+            android:text="      KΩ" />
+
+        <TextView
+            android:id="@+id/ssensor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sensort2"
+            android:layout_alignLeft="@+id/ssensor2"
+            android:text="sensor1"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ssensor1"
+            android:layout_alignLeft="@+id/Spinner_num"
+            android:src="@drawable/sensor1" />
+
+        <TextView
+            android:id="@+id/ssensor4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ssensor3"
+            android:layout_below="@+id/sensort3"
+            android:text="sensor4"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        <TextView
+            android:id="@+id/ssensor5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ssensor3"
+            android:layout_below="@+id/sensort4"
+            android:text="sensor5"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ssensor2"
+            android:layout_alignRight="@+id/imageView1"
+            android:src="@drawable/sensor2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_alignTop="@+id/sensort3"
+            android:src="@drawable/sensor3" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ssensor4"
+            android:layout_alignLeft="@+id/imageView2"
+            android:src="@drawable/sensor4" />
+
+        <TextView
+            android:id="@+id/ssensor3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_alignLeft="@+id/ssensor2"
+            android:text="sensor3"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ssensor5"
+            android:layout_alignLeft="@+id/imageView2"
+            android:src="@drawable/sensor5" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
