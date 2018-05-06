@@ -534,7 +534,7 @@ public class MainActivity extends Activity{
 			    r.setFillPoints(true);
 			    r.setLineWidth(2f);
 			    renderer.addSeriesRenderer(r);
-			    renderer.setMarginsColor(Color.WHITE);
+			    renderer.setMarginsColor(Color.TRANSPARENT);
 			    renderer.setPanEnabled(false,false);
 			    renderer.setShowGrid(true);
 			    renderer.setYAxisMax(20);//设置轴的范围大小
@@ -550,7 +550,7 @@ public class MainActivity extends Activity{
 			    r.setFillPoints(true);
 			    r.setLineWidth(2f);
 			    renderer.addSeriesRenderer(r);
-			    renderer.setMarginsColor(Color.WHITE);
+			    renderer.setMarginsColor(Color.TRANSPARENT);
 			    renderer.setPanEnabled(false,false);
 			    renderer.setShowGrid(true);
 			    renderer.setYAxisMax(50);//设置轴的范围大小
@@ -566,7 +566,7 @@ public class MainActivity extends Activity{
 			    r.setFillPoints(true);
 			    r.setLineWidth(2f);
 			    renderer.addSeriesRenderer(r);
-			    renderer.setMarginsColor(Color.WHITE);
+			    renderer.setMarginsColor(Color.TRANSPARENT);
 			    renderer.setPanEnabled(false,false);
 			    renderer.setShowGrid(true);
 			    renderer.setYAxisMax(50);//设置轴的范围大小
@@ -582,7 +582,7 @@ public class MainActivity extends Activity{
 			    r.setFillPoints(true);
 			    r.setLineWidth(2f);
 			    renderer.addSeriesRenderer(r);
-			    renderer.setMarginsColor(Color.WHITE);
+			    renderer.setMarginsColor(Color.TRANSPARENT);
 			    renderer.setPanEnabled(false,false);
 			    renderer.setShowGrid(true);
 			    renderer.setYAxisMax(50);//设置轴的范围大小
@@ -598,7 +598,7 @@ public class MainActivity extends Activity{
 			    r.setFillPoints(true);
 			    r.setLineWidth(2f);
 			    renderer.addSeriesRenderer(r);
-			    renderer.setMarginsColor(Color.WHITE);
+			    renderer.setMarginsColor(Color.TRANSPARENT);
 			    renderer.setPanEnabled(false,false);
 			    renderer.setShowGrid(true);
 			    renderer.setYAxisMax(50);//设置轴的范围大小
@@ -615,8 +615,8 @@ public class MainActivity extends Activity{
 			   if(length>=100) length = 100;
 			    //addY=random.nextInt()%10;//随机产生数
 			    addY1=BLEClient.checklength[0];
-			    addY2=BLEClient.checklength[1]*10;
-			    addY3=BLEClient.checklength[2]*10;
+			    addY2=BLEClient.checklength[1];
+			    addY3=BLEClient.checklength[2];
 			    addY4=BLEClient.checklength[3];
 			    addY5=BLEClient.checklength[4];
 			    if(isvisible==1)
